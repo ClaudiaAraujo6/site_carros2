@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="estiloaula4.css">
+
+</head>
+<body>
+    
+    <div class="barra">
+        <img src="imagens/logo carro 2.jpg" alt = 'm-mcdonalds'>
+        <h1> STAR AUTOCAR </h1>
+        <div class="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+    
+        <ul>
+        
+            <a href="https://motor1.uol.com.br/features/591465/10-carros-luxo-abandonados-historia/">
+                <li>
+                Inicio
+                </li>
+            </a>
+        <a href="https://fmveiculos.com.br/estoque">
+            <li> 
+                Produtos
+            </li>  
+        </a>
+        <a href="https://www.safrafinanceira.com.br/lp/veiculos">
+          <li> 
+            Serviços
+        </li>
+         </a> 
+         <a href="https://www.google.com/search?q=fm+veiculos&oq=fm+veiculos&gs_lcrp=EgZjaHJvbWUyCwgAEEUYJxg5GIoFMgcIARAAGIAEMg0IAhAuGK8BGMcBGIAEMgcIAxAAGIAEMg0IBBAuGK8BGMcBGIAEMgcIBRAAGIAEMg0IBhAuGK8BGMcBGIAEMg0IBxAuGK8BGMcBGIAEMgcICBAAGIAEMg0ICRAuGK8BGMcBGIAE0gEJNDU5NGowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8#rlimm=1126519338422366699">
+          <li> 
+            Entrar
+        </li>
+        </a>
+
+
+        </ul>
+
+    </div>
+
+    <div class="carros">
+    <div class="meio">
+        <img src="imagens/BMW M roxa.jpg" alt="">
+    <h3>BMW M
+        Média de valor de mercado: de R$ 461.556 a R$ 699.950 (de acordo com a versão)
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Lambo Aventador.jpg" alt="">
+    <h3>Lamborghini Aventador
+        Média de valor de mercado: R$ 3.574.126
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Maclaren azul.jpg" alt="">
+    <h3>Mclaren 720s
+        Média de valor de mercado: R$ 2.521.020
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Mercedes AMG preta.webp" alt="">
+    <h3>Mercedes AMG preta
+        Média de valor de mercado: de R$ 371.488 a R$ 466.900 (de acordo com a versão)
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Porsche 458 Speciale.jpg" alt="">
+    <h3>Ferrari 458 Speciale
+        Média de valor de mercado: de 1.579.403 a 2.900.000 (de acordo com a versão)
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Porsche Cayman azul.jpg" alt="">
+    <h3>Porsche Cayman
+        Média de valor de mercado: de R$ 305.632 a R$ 592.600 (de acordo com a versão)
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Porsche gt3.jpg" alt="">
+    <h3>Porsche GT3 RS
+        Média de valor de mercado: R$ 1.263.898
+        </h3>
+    </div>
+    <div class="meio">
+        <img src="imagens/Porsche gt3.jpg" alt="">
+    <h3>Porsche GT3 RS
+        Média de valor de mercado: R$ 1.263.898
+        </h3>
+    </div>
+
+</div>
+</body>
+
+<script>
+
+    const burguer = document.querySelector('.burguer');
+    const linha1 = document.querySelector('.linha1');
+    const linha2 = document.querySelector('.linha2');
+    const linha3 = document.querySelector('.linha3');
+    const menu = document.querySelector('.barra>ul ');
+    
+      burguer.addEventListener('click', function(){
+          linha1.classList.toggle('linha1-active');
+          linha2.classList.toggle('linha2-active');
+          linha3.classList.toggle('linha3-active');
+          menu.classList.toggle('exibir');
+
+      });
+
+
+    </script>
+    </html>

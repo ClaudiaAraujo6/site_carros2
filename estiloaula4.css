@@ -1,0 +1,139 @@
+
+:root{
+    --corMenu: rgb(167, 163, 228) ; 
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra{
+
+    background-color: var(--corMenu);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: black;
+}
+
+.barra>img{
+
+    height: 70px;
+}
+
+.barra>h1{
+
+    font-size: 40px;
+}
+
+
+.barra>ul{
+
+    list-style-type: none;
+    display: flex;
+    transition: 0.5s;
+}
+
+.barra>ul li{
+
+    border: solid 1px rgb(209, 54, 54);
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 60px;
+    box-shadow: 2px 2px 2px white;
+    color: white;
+  
+}
+
+body {
+    background-color: grey;
+    overflow-x: hidden;
+
+}
+
+.barra> ul> a > li:houver{
+box-shadow: none;
+transform: translateX(1px) translateX(10px);
+float: left;
+}
+
+.burguer{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+}
+.burguer>div{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    float: left;
+}
+
+@media screen and (max-width:768px){
+    
+  .burguer{
+    display:flex;
+    float: left;
+  }
+
+.barra>ul{
+
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: aqua(15,142,211);
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
+    padding: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    transform: translateX(100%);
+    float: left;
+
+}
+
+}
+
+.exibir{
+    transform: translateX(0) !important;
+}
+
+.linha2-active{
+    transition: 0.5s;
+    transform: rotate(405deg);
+}
+
+.linha1-active{
+
+    transform: translateY(8.3px) rotate(405deg);
+}
+
+.linha3-active{
+    transform: translateY(-8.3px) rotate(-940deg);
+}
+
+.carros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carros>div{
+    width: 300px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 3px 3px 3px black;
+
+}
+
+.carros>div>img{
+    width: inherit;
+}
+
